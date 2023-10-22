@@ -2306,3 +2306,15 @@ java.lang.InterruptedException
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-10-22 11:56:53.400
 !MESSAGE executing callback sts4.classpath.iBedsArW SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-10-22 12:07:09.709
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.iBedsArW
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-10-22 12:07:09.709
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.iBedsArW
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-10-22 12:07:09.710
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-10-22 12:07:09.710
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.iBedsArW => OK
