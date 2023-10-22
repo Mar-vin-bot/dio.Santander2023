@@ -1,0 +1,13 @@
+package domain.model;
+
+import java.math.BigDecimal;
+
+public class News {
+	
+	private Long id;
+	private String number;
+	private String agencia;
+	private BigDecimal balance;
+	private BigDecimal limit;
+
+}

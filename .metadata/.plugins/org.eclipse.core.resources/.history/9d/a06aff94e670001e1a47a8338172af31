@@ -1,0 +1,31 @@
+package domain.service;
+
+import java.util.NoSuchElementException;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import domain.model.User;
+import domain.repository.UserRepository;
+
+@Service
+public class UserService_impl implements UserService {
+
+	@Autowired
+	private UserRepository repo;
+	
+	
+	@Override
+	public User findById(Long id) {
+		return repo.findById(id).orElseThrow(NoSuchElementException:: new);
+	}
+
+	@Override
+	public User create(User user) {
+		if(user.getId() != null && repo.existsById(user.getId())){
+			throw new IllegalArgumentException("User ja existe");
+		}
+		return repo.save(user);
+	}
+
+}

@@ -1,0 +1,9 @@
+package domain.model;
+
+public class Features {
+
+	private Long id;
+	private String icon;
+	private String description;
+	
+}
